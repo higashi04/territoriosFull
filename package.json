@@ -9,7 +9,12 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "react-map-gl": "^7.1.5",
+    "react-map-gl-geocoder": "^2.2.0",
+    "deck.gl": "^8.9.30",
+    "mapbox-gl": "^2.15.0",
+    "worker-loader": "^3.0.8"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,5 +39,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }
