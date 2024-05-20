@@ -1,20 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Source, Layer } from "react-map-gl";
 
-const MapLines = ({ markerOne, markerTwo, markerThree, markerFour, cong }) => {
-    const [rgba, setRgba] = useState("rgba(3, 170, 238, 0.5)");
-
-    useEffect(() => {
-        switch (cong) {
-            case "juarez":
-                setRgba("rgba(240, 35, 35, 0.5)")
-                break;
-        
-            default:
-                setRgba("rgba(3, 170, 238, 0.5)")
-                break;
-        }
-    }, [cong, rgba])
+const MapLines = ({ markerOne, markerTwo, markerThree, markerFour }) => {
 
   const dataOne = {
     type: "Feature",
@@ -43,8 +30,9 @@ const MapLines = ({ markerOne, markerTwo, markerThree, markerFour, cong }) => {
           "line-cap": "round",
         }}
         paint={{
-          "line-color": rgba,
+          "line-color": "rgba(3, 170, 238, 0.5)",
           "line-width": 5,
+          "line-dasharray": [2, 2] 
         }}
       />
     </Source>

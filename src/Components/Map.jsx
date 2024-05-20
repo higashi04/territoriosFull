@@ -5,8 +5,10 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import "./Map.css";
 
 import MapLines from "./Lines/MapLines";
-import LinesData from "../helpers/LinesData";
 import LinesDataGuerr from "../helpers/LinesDataGuerr";
+
+import Number from "./Number/Number";
+import Numbers from "../helpers/Numbers";
 
 // eslint-disable-next-line import/no-webpack-loader-syntax
 //import MapboxWorker from 'worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker';
@@ -29,7 +31,6 @@ const Map = ({ zoomValue }) => {
   }, [zoomValue]);
 
   const handleViewPortChange = (viewportValue) => {
-    console.log(map ? "hi" : "bye")
     setViewport(viewportValue.viewState);
   };
 
@@ -54,26 +55,21 @@ const Map = ({ zoomValue }) => {
         touchRotate={true}
         onClick={handleClick}
       >
-        {LinesData.map((line, index) => (
+        
+        {map && LinesDataGuerr.map((line, index) => (
           <MapLines
             key={index}
             markerOne={line.lngOne}
             markerTwo={line.latOne}
             markerThree={line.lngTwo}
             markerFour={line.latTwo}
-            cong={line.cong}
           />
         ))}
-        {LinesDataGuerr.map((line, index) => (
-          <MapLines
-            key={index}
-            markerOne={line.lngOne}
-            markerTwo={line.latOne}
-            markerThree={line.lngTwo}
-            markerFour={line.latTwo}
-            cong={line.cong}
-          />
-        ))}
+
+        {
+          map && Numbers.map((num, index) => <Number key={index} num={num} text={index + 1} />)
+        }
+
       </ReactMapGl>
     </div>
   );
