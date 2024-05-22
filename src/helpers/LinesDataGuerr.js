@@ -33,7 +33,7 @@ const LinesDataGuerr = [
   {
     lngOne: -99.48728656003367,
     latOne: 27.471663887990104,
-    lngTwo: -99.52479877227773,
+    lngTwo: -99.51752168482619,
     latTwo: 27.471663887990104,
   },
   {
@@ -546,8 +546,13 @@ const LinesDataGuerr = [
     lngTwo: -99.52484697557725,
     latTwo: 27.470984505642036,
   },
+  {
+    lngOne: -99.52481172747784,
+    latOne: 27.47209044892304,
+    lngTwo: -99.51752138813808,
+    latTwo: 27.471971681574985,
+  },
 
 ];
-
 
 export default LinesDataGuerr;
