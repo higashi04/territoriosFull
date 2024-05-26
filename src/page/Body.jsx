@@ -19,7 +19,7 @@ const Body = () => {
 
   return (
     <>
-    <span>{zoom}</span>
+    
     <div id="buttonsHolder">
         <button id="btnIncrease" onClick={increaseZoom}>+</button>
         <button id="btnDecrease" onClick={lowerZoom}>-</button>
