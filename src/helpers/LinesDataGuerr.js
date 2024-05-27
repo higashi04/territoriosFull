@@ -1,5 +1,4 @@
 const LinesDataGuerr = [
-    
   {
     lngOne: -99.51747524119001,
     latOne: 27.47983485335621,
@@ -30,11 +29,17 @@ const LinesDataGuerr = [
     lngTwo: -99.51745632769563,
     latTwo: 27.475805269030218,
   },
-  {
-    lngOne: -99.48728656003367,
-    latOne: 27.471663887990104,
-    lngTwo: -99.51752168482619,
-    latTwo: 27.471663887990104,
+  { //chihuahua
+    lngOne: -99.48733952968972,
+    latOne: 27.47171362129029,
+    lngTwo: -99.51748488226983,
+    latTwo: 27.47182051913886,
+  },
+  { //chihuahua 2
+    lngOne: -99.48733307482698,
+    latOne: 27.47171333316402,
+    lngTwo: -99.4872232611783,
+    latTwo: 27.471675118204175,
   },
   {
     lngOne: -99.52038796060462,
@@ -145,16 +150,58 @@ const LinesDataGuerr = [
     latTwo: 27.473692087112155,
   },
   {
-    lngOne: -99.4867412803142,
-    latOne: 27.473065753780602,
-    lngTwo: -99.48883252446467,
-    latTwo: 27.47365273645454,
+    lngOne: -99.48811093204897,
+    latOne: 27.47340392272453,
+    lngTwo: -99.48658969298668, //nvo leon y palmenos
+    latTwo: 27.473065428918517,
   },
   {
-    lngOne: -99.48616876563591,
-    latOne: 27.47432529019808,
-    lngTwo: -99.48664428895698,
-    latTwo: 27.472934175799708,
+    lngOne: -99.48907918535305,
+    latOne: 27.47374536029247,
+    lngTwo: -99.48885714761963, //nvo leon y san felipe de jesus
+    latTwo: 27.473715513013218,
+  },
+  {
+    lngOne: -99.48885624372575,
+    latOne: 27.473715035280364,
+    lngTwo: -99.48879086488101, //nvo leon y san felipe de jesus 2
+    latTwo: 27.473714440351458,
+  },
+  {
+    lngOne: -99.48878864842956,
+    latOne: 27.47371370446686,
+    lngTwo: -99.48854993187652, //nvo leon y san felipe de jesus 3
+    latTwo: 27.473657186208854,
+  },
+  {
+    lngOne: -99.48854801191828,
+    latOne: 27.473653405699196,
+    lngTwo: -99.48832882237865, //nvo leon y san felipe de jesus 4
+    latTwo: 27.47345953758675,
+  },
+  {
+    lngOne: -99.4883264329771,
+    latOne: 27.473458017371357,
+    lngTwo: -99.48811054155831, //nvo leon y san felipe de jesus 5
+    latTwo: 27.47340290423807,
+  },
+  {
+    lngOne: -99.48920576622906,
+    latOne: 27.47375380813847,
+    lngTwo: -99.48908137878621, //nvo leon y quetzacoatl
+    latTwo: 27.473745627866506,
+  },
+  { //linea queatzocatl
+    lngOne: -99.48618431924004,
+    latOne: 27.474324683368394,
+    lngTwo: -99.48622689161579,
+    latTwo: 27.474004304192633,
+  },
+  { //linea queatzocatl 2
+    lngOne: -99.48621972353696,
+    latOne: 27.473979541026324,
+    lngTwo: -99.48666936435025,
+    latTwo: 27.472864343244666,
   },
   {
     lngOne: -99.48649593484724,
@@ -163,10 +210,10 @@ const LinesDataGuerr = [
     latTwo: 27.474239182771043,
   },
   {
-    lngOne: -99.51743569898909,
-    latOne: 27.473799181211263,
-    lngTwo: -99.48876990520085,
-    latTwo: 27.47363598767842,
+    lngOne: -99.51749659045424, //nvo leon y cesar lopez de lara
+    latOne: 27.47381980028888,
+    lngTwo: -99.4892088179119,
+    latTwo: 27.47375365281964,
   },
   {
     lngOne: -99.49201016619595,
@@ -235,10 +282,10 @@ const LinesDataGuerr = [
     latTwo: 27.476676810635936,
   },
   {
-    lngOne: -99.50184533105397,
-    latOne: 27.471525544760638,
-    lngTwo: -99.50181054113824,
-    latTwo: 27.473593615159132,
+    lngOne: -99.50186500648472, //jesus carranza y chihuahua
+    latOne: 27.471747585621344,
+    lngTwo: -99.50184594526365, // y nvo leon
+    latTwo: 27.473772497680343,
   },
   {
     lngOne: -99.50279157575177,
@@ -276,11 +323,17 @@ const LinesDataGuerr = [
     lngTwo: -99.48922969280277,
     latTwo: 27.46249295924848,
   },
-  {
-    lngOne: -99.48880471304135,
-    latOne: 27.46514785438636,
-    lngTwo: -99.48668032369015,
-    latTwo: 27.47287026321382,
+  { //linea queatzocoatl 3
+    lngOne: -99.48721954186249,
+    latOne: 27.47168118155787,
+    lngTwo: -99.48668440549163,
+    latTwo: 27.472867013118147,
+  },
+  { //linea queatzocoatl 4
+    lngOne: -99.48882030615657,
+    latOne: 27.4651931973396,
+    lngTwo: -99.48723086612188,
+    latTwo: 27.471640021936025,
   },
   {
     lngOne: -99.48838448751475,
@@ -289,10 +342,10 @@ const LinesDataGuerr = [
     latTwo: 27.465104711861244,
   },
   {
-    lngOne: -99.48672241628758,
-    latOne: 27.472639290300137,
-    lngTwo: -99.4958940420708,
-    latTwo: 27.47268439756806,
+    lngOne: -99.48685236452967, //coahuila y quetzacoatl
+    latOne: 27.472717924045867,
+    lngTwo: -99.49585979660236, // y leona vicario
+    latTwo: 27.47273726447837,
   },
   {
     lngOne: -99.49216371045651,
@@ -303,8 +356,20 @@ const LinesDataGuerr = [
   {
     lngOne: -99.48919586834785,
     latOne: 27.462489082797234,
-    lngTwo: -99.51748624581097,
-    latTwo: 27.46274218959968,
+    lngTwo: -99.51423079537825, //anahuac y riva palacio
+    latTwo: 27.462732358393822,
+  },
+  {
+    lngOne: -99.5154166429523, // anahuac y donato guerra
+    latOne: 27.46284397350307,
+    lngTwo: -99.51423079537825, //anahuac y riva palacio
+    latTwo: 27.462732358393822,
+  },
+  {
+    lngOne: -99.51544023138612, // anahuac y donato guerra
+    latOne: 27.462847752309358,
+    lngTwo: -99.51757390208667, //anahuac y cesar lopez de lara
+    latTwo: 27.46303345218425,
   },
   {
     lngOne: -99.49192328326193,
@@ -313,10 +378,39 @@ const LinesDataGuerr = [
     latTwo: 27.471600256870488,
   },
   {
+    //linea calle campeche
     lngOne: -99.51752648008117,
     latOne: 27.46976872091426,
-    lngTwo: -99.48756266576392,
-    latTwo: 27.469689591688706,
+    lngTwo: -99.49608324654713,
+    latTwo: 27.469701996449956,
+  },
+  {
+    //linea calle campeche 2
+    lngOne: -99.4960717206966,
+    latOne: 27.469695951202652,
+    lngTwo: -99.49591646878125,
+    latTwo: 27.469669853202888,
+  },
+  {
+    //linea calle campeche 3
+    lngOne: -99.49591580132322,
+    latOne: 27.46965741903614,
+    lngTwo: -99.49107809413913,
+    latTwo: 27.469625729130414,
+  },
+  {
+    //linea calle campeche 4
+    lngOne: -99.49108929610155,
+    latOne: 27.469611712342996,
+    lngTwo: -99.49035905548739,
+    latTwo: 27.469775929061285,
+  },
+  {
+    //linea calle campeche 5
+    lngOne: -99.49032202778821,
+    latOne: 27.469782076840247,
+    lngTwo: -99.48771674082555,
+    latTwo: 27.469786118014653,
   },
   {
     lngOne: -99.49592052733968,
@@ -324,9 +418,9 @@ const LinesDataGuerr = [
     lngTwo: -99.49590153638479,
     latTwo: 27.471613269566674,
   },
-  {
-    lngOne: -99.50071756880023,
-    latOne: 27.46516851704051,
+  { //degollado y paseo colon
+    lngOne: -99.50085289335652,
+    latOne: 27.465123289537516,
     lngTwo: -99.50090659870938,
     latTwo: 27.471602855113716,
   },
@@ -396,11 +490,29 @@ const LinesDataGuerr = [
     lngTwo: -99.5154517573556,
     latTwo: 27.459825509165782,
   },
-  {
-    lngOne: -99.50301287119787,
-    latOne: 27.46644686771276,
+  { //paseo colon
+    lngOne: -99.50354711743121,
+    latOne: 27.46655361422401,
     lngTwo: -99.5175182575505,
     latTwo: 27.466656296366764,
+  },
+  { //paseo colon curva
+    lngOne: -99.50354695021319,
+    latOne: 27.46654760112395,
+    lngTwo: -99.50331214118836,
+    latTwo: 27.466503690590585,
+  },
+  { //paseo colon curva 2
+    lngOne: -99.50329963595155,
+    latOne: 27.46649689467523,
+    lngTwo: -99.50297404870997,
+    latTwo: 27.466403596411993,
+  },
+  { //paseo colon curva 3
+    lngOne: -99.50295768017943,
+    latOne: 27.466395575512067,
+    lngTwo: -99.5028055368438,
+    latTwo: 27.466309798062085,
   },
   {
     lngOne: -99.51537366938182,
@@ -450,23 +562,41 @@ const LinesDataGuerr = [
     lngTwo: -99.50474306603704,
     latTwo: 27.469673187606574,
   },
-  {
-    lngOne: -99.50069302399628,
-    latOne: 27.465073947491447,
-    lngTwo: -99.50283879120809,
-    latTwo: 27.466235334024034,
+  { //paseo colon curva de rio balsas
+    lngOne: -99.50246242011389,
+    latOne: 27.466080894944724,
+    lngTwo: -99.50279924875367,
+    latTwo: 27.466305136726902,
   },
-  {
-    lngOne: -99.48873661182635,
-    latOne: 27.464897088952554,
-    lngTwo: -99.50062170059395,
-    latTwo: 27.465070916772717,
+  { //paseo colon curva consulado
+    lngOne: -99.50244635530326,
+    latOne: 27.466061314453952,
+    lngTwo: -99.50175516480645,
+    latTwo: 27.465401702992082,
+  },
+  { //paseo colon curva consulado 2
+    lngOne: -99.50171724402847,
+    latOne: 27.465355656047677,
+    lngTwo: -99.50140691682567,
+    latTwo: 27.46519962416619,
+  },
+  { //paseo colon curva consulado 3
+    lngOne: -99.50137577901083,
+    latOne: 27.46518441425532,
+    lngTwo: -99.5008710607703,
+    latTwo: 27.46510278965941,
+  },
+  { //paseo colon fin
+    lngOne: -99.48870918632588,
+    latOne: 27.465014709672232,
+    lngTwo: -99.50084548755378,
+    latTwo: 27.465105782303638,
   },
   {
     lngOne: -99.50291986893325,
     latOne: 27.462620208538638,
-    lngTwo: -99.5027642926531,
-    latTwo: 27.469684422142038,
+    lngTwo: -99.50285795068581, //leandro valle y campeche
+    latTwo: 27.469721384535205,
   },
   {
     lngOne: -99.4963098087698,
@@ -505,22 +635,22 @@ const LinesDataGuerr = [
     latTwo: 27.46821314675229,
   },
   {
-    lngOne: -99.49171625653821,
-    latOne: 27.468741837658285,
+    lngOne: -99.49173175283168,
+    latOne: 27.468766593966606,
     lngTwo: -99.49180882871464,
     latTwo: 27.464881386000044,
   },
   {
-    lngOne: -99.49042802843371,
-    latOne: 27.468728414268753,
-    lngTwo: -99.49169493012168,
-    latTwo: 27.468728414268753,
+    lngOne: -99.49044971203105,
+    latOne: 27.468761286293827,
+    lngTwo: -99.49172731220797,
+    latTwo: 27.468770859529343,
   },
   {
     lngOne: -99.48834568830914,
     latOne: 27.466830668082892,
-    lngTwo: -99.49037756010473,
-    latTwo: 27.468716270336984,
+    lngTwo: -99.49037836795407,
+    latTwo: 27.468744952575946,
   },
   {
     lngOne: -99.48637434766405,
@@ -552,7 +682,42 @@ const LinesDataGuerr = [
     lngTwo: -99.51752138813808,
     latTwo: 27.471971681574985,
   },
-
+  {
+    lngOne: -99.49191826774006,
+    latOne: 27.46894863317557,
+    lngTwo: -99.49186146121536,
+    latTwo: 27.46893087784983,
+  },
+  {
+    lngOne: -99.49185734863502,
+    latOne: 27.46893006614374,
+    lngTwo: -99.49182532976488,
+    latTwo: 27.468918613260627,
+  },
+  {
+    lngOne: -99.49182587379896,
+    latOne: 27.468917045521792,
+    lngTwo: -99.49177518857624,
+    latTwo: 27.468871198421553,
+  },
+  {
+    lngOne: -99.49177411956974,
+    latOne: 27.46886837038042,
+    lngTwo: -99.49174807723436,
+    latTwo: 27.46883657052919,
+  },
+  {
+    lngOne: -99.49174526506691,
+    latOne: 27.468827792857823,
+    lngTwo: -99.4917323251778,
+    latTwo: 27.468769294053104,
+  },
+  {
+    lngOne: -99.49044808040732,
+    latOne: 27.468760255453958,
+    lngTwo: -99.49038001285021,
+    latTwo: 27.468746100658834,
+  },
 ];
 
 export default LinesDataGuerr;

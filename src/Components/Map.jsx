@@ -51,7 +51,8 @@ const Map = ({ zoomValue }) => {
         interactive={true}
         dragPan={true}
         dragRotate={true}
-        touchZoom={true}
+        touchZoom={false}
+        scrollZoom={false}
         touchRotate={true}
         onClick={handleClick}
       >
