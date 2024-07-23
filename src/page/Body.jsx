@@ -3,7 +3,7 @@ import Map from "../Components/Map";
 import "./Body.css";
 
 const Body = () => {
-    const [zoom, setZoom] = useState(15);
+    const [zoom, setZoom] = useState(17);
 
     const lowerZoom = () => {
         if (zoom > 1) {
@@ -20,10 +20,10 @@ const Body = () => {
   return (
     <>
     
-    <div id="buttonsHolder">
+    {/* <div id="buttonsHolder" >
         <button id="btnIncrease" onClick={increaseZoom}>+</button>
         <button id="btnDecrease" onClick={lowerZoom}>-</button>
-    </div>
+    </div> */}
     <div id="mapHolder">
       <Map zoomValue={zoom} />
     </div>

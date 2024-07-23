@@ -57,7 +57,7 @@ const Map = ({ zoomValue }) => {
         onClick={handleClick}
       >
         
-        {map && LinesDataGuerr.map((line, index) => (
+        {/* {map && LinesDataGuerr.map((line, index) => (
           <MapLines
             key={index}
             markerOne={line.lngOne}
@@ -65,11 +65,11 @@ const Map = ({ zoomValue }) => {
             markerThree={line.lngTwo}
             markerFour={line.latTwo}
           />
-        ))}
+        ))} */}
 
-        {
+        {/* {
           map && Numbers.map((num, index) => <Number key={index} num={num} text={index + 1} />)
-        }
+        } */}
 
       </ReactMapGl>
     </div>
