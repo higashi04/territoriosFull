@@ -4,11 +4,11 @@ import ReactMapGl from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import "./Map.css";
 
-import MapLines from "./Lines/MapLines";
-import LinesDataGuerr from "../helpers/LinesDataGuerr";
+// import MapLines from "./Lines/MapLines";
+// import LinesDataGuerr from "../helpers/LinesDataGuerr";
 
-import Number from "./Number/Number";
-import Numbers from "../helpers/Numbers";
+// import Number from "./Number/Number";
+// import Numbers from "../helpers/Numbers";
 
 // eslint-disable-next-line import/no-webpack-loader-syntax
 //import MapboxWorker from 'worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker';
@@ -21,7 +21,7 @@ const Map = ({ zoomValue }) => {
     width: "100%",
     height: "100%",
   });
-  const [map, setMap] = useState(null);
+  const [ setMap] = useState(null);
 
   useEffect(() => {
     setViewport((prevViewport) => ({
