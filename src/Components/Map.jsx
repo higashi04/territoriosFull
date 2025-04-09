@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from "react";
 import ReactMapGl from "react-map-gl";
+import Papa from 'papaparse';
 
 import "mapbox-gl/dist/mapbox-gl.css";
 import "./Map.css";
 
-// import MapLines from "./Lines/MapLines";
-// import LinesDataGuerr from "../helpers/LinesDataGuerr";
+import MarkerCasas from "./Marker/MarkerCasas";
+import CSVUploader from "./CSVUploader/CSVUploader";
+/* import MapLines from "./Lines/MapLines";
+import LinesDataGuerr from "../helpers/LinesDataGuerr";
 
-// import Number from "./Number/Number";
-// import Numbers from "../helpers/Numbers";
+import Number from "./Number/Number";
+import Numbers from "../helpers/Numbers"; */
 
 // eslint-disable-next-line import/no-webpack-loader-syntax
 //import MapboxWorker from 'worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker';
@@ -21,7 +24,9 @@ const Map = ({ zoomValue }) => {
     width: "100%",
     height: "100%",
   });
-  const [ setMap] = useState(null);
+  const [map, setMap] = useState(null);
+  const [coordinates, setCoordinates] = useState([]);
+  const [csv, setCsv] = useState(null);
 
   useEffect(() => {
     setViewport((prevViewport) => ({
@@ -30,6 +35,33 @@ const Map = ({ zoomValue }) => {
     }));
   }, [zoomValue]);
 
+  useEffect(() => {
+    const fetchCSV = async () => {
+        const parsedData = Papa.parse(csv, {
+          header: true,
+          skipEmptyLines: true,
+          complete: (results) => {
+            
+            const coordinatesArray = results.data.map(row => {
+              console.log(row)
+              const [lat, lng] = row.Coordenadas.split(",").map(coord => parseFloat(coord.trim()));
+              return {
+                nombre: row.Nombre,
+                direccion: row.Direccion,
+                latitude: lat,
+                longitude: lng,
+              };
+            });
+            setCoordinates(coordinatesArray);
+          },
+        });
+        console.log(parsedData);
+    }
+    if(csv) {
+      fetchCSV();
+    }
+  }, [csv])
+
   const handleViewPortChange = (viewportValue) => {
     setViewport(viewportValue.viewState);
   };
@@ -37,10 +69,12 @@ const Map = ({ zoomValue }) => {
   const handleClick = (event) => {
     const { lngLat } = event;
     console.log(lngLat);
+    console.log(map)
   };
 
   return (
     <div id="showMap">
+      <CSVUploader setFile={setCsv} />
       <ReactMapGl
         {...viewport}
         ref={(el) => setMap(el)}
@@ -52,12 +86,24 @@ const Map = ({ zoomValue }) => {
         dragPan={true}
         dragRotate={true}
         touchZoom={false}
-        scrollZoom={false}
+        scrollZoom={true}
         touchRotate={true}
         onClick={handleClick}
       >
-        
-        {/* {map && LinesDataGuerr.map((line, index) => (
+       {
+        coordinates.map(marker => {
+          return (
+            <MarkerCasas
+              key={marker.nombre}
+              latitude={marker.latitude}
+              longitude={marker.longitude}
+              nombre={marker.nombre}
+              direccion={marker.direccion}
+            />
+          )
+        })
+       } 
+{/*         {map && LinesDataGuerr.map((line, index) => (
           <MapLines
             key={index}
             markerOne={line.lngOne}
@@ -67,7 +113,7 @@ const Map = ({ zoomValue }) => {
           />
         ))} */}
 
-        {/* {
+{/*         {
           map && Numbers.map((num, index) => <Number key={index} num={num} text={index + 1} />)
         } */}
 

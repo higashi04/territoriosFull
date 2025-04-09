@@ -1,0 +1,80 @@
+.modal-overlay  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* fondo oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-header {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.modal-data {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+
+.modal-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: darkred;
+  }
+
+  .marker {
+    background-color: #ff4d4d; /* rojo suave */
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(255, 77, 77, 0.5), 0 2px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  /* Animación sutil al aparecer */
+  @keyframes pop-in {
+    from {
+      transform: scale(0) translate(-50%, -50%);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1) translate(-50%, -50%);
+      opacity: 1;
+    }
+  }
+  
+  .marker {
+    animation: pop-in 0.3s ease-out;
+  }
+  
+  /* Hover: se agranda un poco y brilla */
+  .marker:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+    box-shadow: 0 0 15px rgba(255, 77, 77, 0.8), 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+  
