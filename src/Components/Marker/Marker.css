@@ -44,14 +44,14 @@
   }
 
   .marker {
-    background-color: #ff4d4d; /* rojo suave */
+    background-color: var(--color);
     border: 3px solid white;
     border-radius: 50%;
     width: 24px;
     height: 24px;
     position: absolute;
     transform: translate(-50%, -50%);
-    box-shadow: 0 0 10px rgba(255, 77, 77, 0.5), 0 2px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px var(--colorShadow), 0 2px 6px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
@@ -75,6 +75,6 @@
   /* Hover: se agranda un poco y brilla */
   .marker:hover {
     transform: translate(-50%, -50%) scale(1.2);
-    box-shadow: 0 0 15px rgba(255, 77, 77, 0.8), 0 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 15px var(--colorHover), 0 4px 10px rgba(0, 0, 0, 0.4);
   }
   

@@ -50,6 +50,7 @@ const Map = ({ zoomValue }) => {
                 direccion: row.Direccion,
                 latitude: lat,
                 longitude: lng,
+                grupo: row.grupo
               };
             });
             setCoordinates(coordinatesArray);
@@ -99,6 +100,7 @@ const Map = ({ zoomValue }) => {
               longitude={marker.longitude}
               nombre={marker.nombre}
               direccion={marker.direccion}
+              grupo={marker.grupo}
             />
           )
         })
